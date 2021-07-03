@@ -1,0 +1,132 @@
+.home {
+  height: 100%;
+  width: 100%;
+  &--first_section {
+    width: 100vw;
+    height: 100vh;
+    background: url('../static/BG_Home.png') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  &--left_header {
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(#FFFFFF, #808080);
+    box-shadow: 0px 3px 6px #0000009E;
+    opacity: 40%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 5vw;
+      font-weight: 900;
+      text-shadow: 5px 0px 6px rgba(150, 150, 150, 0.62);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      color: red;
+    }
+  }
+
+  &--right_header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 50%;
+
+    p {
+      padding-left: 25px;
+      padding-top: 150px;
+      font-size: 6vw;
+      font-weight: bolder;
+      opacity: 0.57;
+    }
+  }
+
+  &--bottom_navigator {
+    position: absolute !important;
+    bottom: 45px;
+    right: 50%;
+    transform: translateX(50%) scale(2.5);
+    cursor: pointer;
+  }
+
+  &--second_section {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: relative;
+  }
+
+  &--bottom_layout {
+    display: grid;
+    grid-template-areas:
+      'header header image image image'
+      'content content image image image'
+      'content content image image image'
+    ;
+  }
+
+  &--bottom_header {
+    grid-area: header;
+    color: black;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-weight: bold;
+      padding-top: 50px;
+      font-size: 60px;
+    }
+  }
+
+  &--bottom_content {
+    grid-area: content;
+    background: #CDDAAE;
+    height: 60vh;
+    color:black;
+
+  }
+
+  &--bottom_image {
+    grid-area: image;
+    color:black;
+    height: 100vh;
+    position: relative;
+
+    img {
+      max-height: 800px;
+      position: absolute;
+      bottom:45px;
+      right: 45px;
+
+    }
+
+    img::before {
+      content: "";
+      background: #CDDAAE;
+      width: 500px;
+      height: 1000px;
+      position: absolute;
+    }
+  }
+
+  &--upper-color {
+    background: white;
+    height: 40%;
+  }
+
+  &--bottom-color {
+    background: #CDDAAE;
+    height: 60%;
+  }
+}

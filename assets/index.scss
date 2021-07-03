@@ -1,0 +1,14 @@
+@import './header.scss';
+@import './home.scss';
+@import './about.scss';
+@import './contact.scss';
+@import './gallery.scss';
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
