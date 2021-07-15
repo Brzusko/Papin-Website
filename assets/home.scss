@@ -16,9 +16,8 @@
   &--left_header {
     height: 100%;
     width: 50%;
-    background: linear-gradient(#FFFFFF, #808080);
+    background: rgba(#FFF, 0.4);
     box-shadow: 0px 3px 6px #0000009E;
-    opacity: 40%;
 
     display: flex;
     align-items: center;
@@ -28,9 +27,8 @@
       font-size: 5vw;
       font-weight: 900;
       text-shadow: 5px 0px 6px rgba(150, 150, 150, 0.62);
-      -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;
-      color: red;
+      color: white;
+      opacity: 100%;
     }
   }
 
@@ -66,18 +64,14 @@
   }
 
   &--bottom_layout {
-    display: grid;
-    grid-template-areas:
-      'header header image image image'
-      'content content image image image'
-      'content content image image image'
-    ;
+
   }
 
   &--bottom_header {
     grid-area: header;
     color: black;
     height: 40vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,37 +83,42 @@
     }
   }
 
+  &--bottom_content-wrapper {
+    display: flex;
+    width: 100vw;
+    color: black;
+    font-size: 26px;
+    font-weight: bolder;
+    padding: 70px;
+  }
+
   &--bottom_content {
-    grid-area: content;
-    background: #CDDAAE;
-    height: 60vh;
-    color:black;
-
-  }
-
-  &--bottom_image {
-    grid-area: image;
-    color:black;
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background: #F2EBEF;
+    padding: 75px;
     position: relative;
+    height: 85vh;
+    width: 100vw;
 
-    img {
-      max-height: 800px;
-      position: absolute;
-      bottom:45px;
-      right: 45px;
-
+    &__text {
+      display: flex;
+      flex-direction: column;
+      max-width: 60vw;
+      height: 100%;
+      justify-content: space-between;
     }
 
-    img::before {
-      content: "";
-      background: #CDDAAE;
-      width: 500px;
-      height: 1000px;
+    &__img {
+      right: 0;
+      top: 0;
       position: absolute;
+
+      img {
+        max-height: 85vh;
+      }
     }
   }
-
   &--upper-color {
     background: white;
     height: 40%;

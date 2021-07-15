@@ -18,6 +18,7 @@
       <nuxt-link :to="routes[4].path" class="it-header--link">
           {{ routes[4].name }}
       </nuxt-link>
+      <img :src="Logo"/>
   </div>
 </template>
 
