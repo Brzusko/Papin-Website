@@ -1,0 +1,101 @@
+.about {
+  background: white;
+  padding-top: 205px;
+  padding-left: 130px;
+  padding-right: 130px;
+
+
+  &--container {
+    display: flex;
+    gap: 100px;
+    &:first-child {
+      margin-bottom: 130px;
+    }
+  }
+
+  &--text {
+    color: black;
+    font-size: 25px;
+    align-self: flex-end;
+    padding-bottom: 90px;
+  }
+
+  &--image {
+    position: relative;
+    z-index: 2;
+    &__pin {
+      position: absolute;
+      background: #B2C5B2;
+      font-size: 50px;
+      padding: 10px 32px;
+      right: -400px;
+      top: 30px;
+      font-weight: bold;
+
+      &:after {
+        position: absolute;
+        border: #BBBD3A solid 2px;
+        width: 80%;
+        height: 100%;
+        transform: translate(-300px, 30px);
+        z-index: -1;
+        content: "";
+      }
+      &:before {
+        content: url("./static/ap_leafes.png");
+        z-index: 11;
+        position: absolute;
+        right: -60px;
+        top: -30px;
+      }
+    }
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__pin-2 {
+      position: absolute;
+      background: #B2C5B2;
+      font-size: 50px;
+      padding: 10px 55px;
+      left: -350px;
+      bottom: 90px;
+      font-weight: bold;
+
+      &:before {
+        content: url("./static/mp_leafes.png");
+        z-index: 11;
+        position: absolute;
+        left: -20px;
+        top: -10px;
+      }
+
+      &:after {
+        position: absolute;
+        border: #617761 solid 2px;
+        width: 80%;
+        height: 80%;
+        transform: translate(-370px, 30px);
+        z-index: -1;
+        content: "";
+      }
+    }
+  }
+
+  &--inner-imager {
+    padding-top: 130px;
+  }
+}
+
+.bold-color {
+  color: #879D87;
+}
+
+.force-padding-top {
+  padding-top: 90px;
+}
+
+.force-position-start {
+  align-self: flex-start;
+}
