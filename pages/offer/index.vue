@@ -30,7 +30,7 @@
           <v-col cols="12" sm="4">
             <div class="offer--card">
               <div class="offer--card__header">
-                <v-icon x-large>mdi-chart-bar</v-icon>
+                <v-icon x-large>mdi-clipboard-multiple-outline</v-icon>
               </div>
               <div class="offer--card__body">
                 <ul>
@@ -50,7 +50,7 @@
           <v-col cols="12" sm="4">
             <div class="offer--card">
               <div class="offer--card__header">
-                <v-icon x-large>mdi-chart-bar</v-icon>
+                <v-icon x-large>mdi-magnify</v-icon>
               </div>
               <div class="offer--card__body">
                 <ul>
@@ -81,7 +81,6 @@ export default {
   components: {
   },
   mounted() {
-    console.log(this.$route.name)
   }
 }
 </script>

@@ -23,7 +23,7 @@
   }
 
   &--exit {
-    position: fixed;
+    position: absolute;
   }
 
   &--image {
@@ -33,5 +33,23 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size:cover !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery {
+    height: auto;
+    background: white;
+    &--mobile {
+      &__header {
+        display: flex;
+        width: 100%;
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        justify-content: center;
+        align-content: center;
+      }
+    }
   }
 }

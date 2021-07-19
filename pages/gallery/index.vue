@@ -1,6 +1,6 @@
 <template>
   <div class="gallery">
-    <v-carousel hide-delimiters cycle :interval="4000" progress progress-color="red">
+    <v-carousel hide-delimiters cycle :interval="4000" progress progress-color="red" class="visible-desktop">
       <v-carousel-item
         v-for="(image, index) in images"
         :key="index"
@@ -8,7 +8,7 @@
         >
       </v-carousel-item>
     </v-carousel>
-    <p class="gallery--button" @click="showOverlay = !showOverlay">
+    <p class="gallery--button visible-desktop" @click="showOverlay = !showOverlay">
       Kliknij aby zobaczyć całą galerie
     </p>
     <v-dialog v-model="showOverlay" fullscreen>
@@ -18,6 +18,7 @@
         dark
         small
         color="#F3EEF0"
+        @click="showOverlay = !showOverlay"
       >
         <v-icon color="red">
           mdi-close
@@ -30,6 +31,18 @@
         :style="`background: url('${path}${image}') no-repeat;`"
       />
     </v-dialog>
+    <v-img class="gallery--mobile visible-mobile">
+      <div class="gallery--mobile__header">
+        <p>Galeria Zdjęć</p>
+      </div>
+      <v-img
+        v-for="(image, index) in images"
+        :key="index"
+        :src="`${path}${image}`"
+        contain
+        style="margin-bottom: 30px"
+      />
+    </v-img>
   </div>
 </template>
 

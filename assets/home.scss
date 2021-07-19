@@ -107,6 +107,7 @@
       max-width: 60vw;
       height: 100%;
       justify-content: space-between;
+      z-index: 10;
     }
 
     &__img {
@@ -127,5 +128,121 @@
   &--bottom-color {
     background: #CDDAAE;
     height: 60%;
+  }
+}
+
+.visible-mobile {
+  display: none !important;
+}
+
+.visible-desktop {
+  display: block;
+}
+@media screen and (max-width: 1000px) {
+  .home {
+    &--first_section {
+      flex-direction: column;
+      height: 65vh;
+    }
+    &--left_header {
+      height: 100%;
+      width: 100%;
+      background: none;
+      box-shadow: none;
+      align-items: flex-end;
+      p {
+        font-size: 58px;
+        position: relative;
+        &:before {
+          content: "";
+          width: 75%;
+          height: 2px;
+          position: absolute;
+          border: 1px solid white;
+          top: -20px;
+          transform: translateX(15%);
+        }
+      }
+    }
+
+    &--right_header {
+      height: 100%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+
+      p {
+        position: relative;
+        padding:0;
+        font-size: 70px;
+        font-weight: bolder;
+        color:white;
+        opacity: 100%;
+        &:before {
+          content: "";
+          width: 75%;
+          height: 2px;
+          position: absolute;
+          border: 1px solid white;
+          bottom: -20px;
+          transform: translateX(15%);
+        }
+      }
+    }
+  }
+  .home--bottom_header {
+    height: 20vh;
+    p {
+      font-size: 40px;
+    }
+  }
+  .home--bottom_content-wrapper {
+    font-size: 16px;
+  }
+
+  .home--bottom_content {
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .home--bottom_content__text {
+    justify-content: flex-start;
+    align-items: center;
+    width: 100% !important;
+    max-width: max-content;
+    p {
+      text-align: center;
+    }
+  }
+
+  .home--bottom_content__img {
+    position: relative;
+    img {
+      height: 70vh;
+    }
+  }
+  .home--second_section {
+    height: auto;
+  }
+
+  .visible-mobile {
+    display: block !important;
+  }
+  .visible-desktop {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .home--bottom_content-wrapper {
+    padding: 10px;
+  }
+  .home--bottom_header {
+    p {
+      font-size: 30px;
+    }
   }
 }
