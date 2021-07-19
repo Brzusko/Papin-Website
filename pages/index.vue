@@ -32,7 +32,13 @@
              </p>
            </div>
            <div class="home--bottom_content__img">
-              <img :src="plant"/>
+              <v-img
+                :src="plant"
+                contain
+                class="visible-mobile"
+              >
+              </v-img>
+             <img :src="plant" class="visible-desktop"/>
            </div>
          </div>
        </div>
@@ -55,7 +61,6 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$route.name)
   }
 }
 </script>

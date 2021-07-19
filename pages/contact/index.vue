@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-    <div class="contact--image">
+    <div class="contact--image visible-desktop">
       <img :src="Plant"/>
     </div>
     <div class="contact--content">

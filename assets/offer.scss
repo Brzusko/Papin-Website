@@ -51,3 +51,55 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .offer {
+    &--header {
+      &__text {
+        font-size: 70px;
+      }
+    }
+    &--body {
+      &__title {
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    &--card {
+      &__body {
+        ul {
+          li {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .offer {
+    &--header {
+      &__text {
+        font-size: 50px;
+      }
+    }
+    &--body {
+      &__title {
+        text-align: center;
+        font-size: 30px;
+      }
+    }
+    &--card {
+      height: auto;
+      min-height: auto;
+      &__body {
+        ul {
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

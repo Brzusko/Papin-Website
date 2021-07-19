@@ -1,17 +1,23 @@
 <template>
   <div class="about">
     <div class="about--container">
+      <div class="about--mobile__header">
+        O Nas
+      </div>
       <div class="about--image">
         <div class="about--image__pin">
           Aleksandra Papin
         </div>
         <img :src="APapin"/>
+        <div class="about--mobile__info about-visible-mobile">
+          Aleksandra Papin
+        </div>
       </div>
       <div class="about--text">
         <p><b>Aleksandra Papin i Marek Papin</b> – absolwenci Uniwersytetu Śląskiego, na
           <b class="bold-color">Wydziale Biologii i Ochrony Środowiska</b>, oboje z kilkunastoletnim
           doświadczeniem w branży ochrony środowiska.</p>
-
+        <img :src="PPapin" class="about-visible-mobile img-mobile-height" style="margin-bottom: 29px; margin-top: 29px;">
         <p>Z zamiłowania przyrodnicy a zawodowo związani jesteśmy z branżą
           ochrony środowiska.</p>
 
@@ -24,7 +30,13 @@
     </div>
     <div class="about--container">
       <div class="about--text force-position-start">
-        <p>Do każdego tematu podchodzimy indywidualnie, działamy elastycznie i
+        <div class="about--marek visible-mobile">
+          <img :src="MPapin"/>
+          <div class="about--mobile__info about-visible-mobile">
+            Marek Papin
+          </div>
+        </div>
+        <p class="about-visible-desktop">Do każdego tematu podchodzimy indywidualnie, działamy elastycznie i
           terminowo, dostosowując się do ustalonego harmonogramu Inwestora.</p>
 
         <p>Dysponujemy sprzętem umożliwiającym dokonywanie i dokumentowanie
@@ -34,9 +46,9 @@
 
         <p>Pracujemy na umowę zlecenie lub umowę o dzieło, co czyni nas bardziej
           konkurencyjnymi na rynku.</p>
-        <img :src="PPapin" class="about--inner-imager"/>
+        <img :src="PPapin" class="about--inner-imager about-visible-desktop"/>
       </div>
-      <div class="about--image force-padding-top">
+      <div class="about--image force-padding-top about-visible-desktop">
         <div class="about--image__wrapper">
           <div class="about--image__pin-2">
             Marek Papin
