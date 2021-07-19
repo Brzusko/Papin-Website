@@ -51,7 +51,7 @@
 export default {
   data() {
     return {
-      path: 'https://api.inwentaryzacje-papin.pl/',
+      path: 'https://api.inwentaryzacje-papin.pl',
       images: [],
       showOverlay: false,
     };
