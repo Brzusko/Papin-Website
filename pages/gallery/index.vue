@@ -51,7 +51,7 @@
 export default {
   data() {
     return {
-      path: 'http://localhost:9000',
+      path: 'https://api.inwentaryzacje-papin.pl/',
       images: [],
       showOverlay: false,
     };
@@ -59,7 +59,6 @@ export default {
   components: {
   },
   mounted() {
-    console.log(this.$route.name);
     this.$fetch();
   },
   async fetch() {
