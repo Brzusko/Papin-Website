@@ -6,7 +6,7 @@ export default {
     titleTemplate: '%s - Papin',
     title: 'Papin',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pl'
     },
     meta: [
       { charset: 'utf-8' },
@@ -26,6 +26,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    {
+      src: './plugins/scroll.js', mode: 'client',
+    }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

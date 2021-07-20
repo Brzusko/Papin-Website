@@ -37,10 +37,25 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .gallery--scroll {
+    position: fixed !important;
+  }
   .gallery {
     height: auto;
+    width: auto;
     background: white;
+    padding:0;
+    &--scroll {
+      position: fixed;
+      z-index: 10;
+      bottom: 30px;
+      right: 30px;
+    }
     &--mobile {
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       &__header {
         display: flex;
         width: 100%;

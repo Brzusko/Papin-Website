@@ -9,13 +9,13 @@
           <p class="contact--content__header">Kontakt</p>
           <div class="contact--content__text">
             Zapraszamy do kontaktu – oferujemy rzetelną dokumentację, w konkurencyjnych cenach.<br>
-            Obszar naszych działań do zasadniczo rejon Śląska, ale po uzgodnieniu warunków możemy dotrzeć również dalej.
+            Obszar naszych działań to zasadniczo rejon Śląska, ale po uzgodnieniu warunków możemy dotrzeć również dalej.
           </div>
         </div>
       </div>
       <div class="contact--content__down">
         <div class="contact--content__info">
-          <p>Alekandra Papin</p>
+          <p>Aleksandra Papin</p>
           <div class="contact--content__field">
             <div class="contact--content__data">
               <div class="contact--content__data--header">

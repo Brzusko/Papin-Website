@@ -7,9 +7,11 @@
      <div class="home--right_header">
        <p>PAPIN</p>
      </div>
-     <v-icon x-large class="home--bottom_navigator">mdi-chevron-down</v-icon>
+     <a href="#second-section" v-smooth-scroll style="border: none; color: transparent;">
+       <v-icon x-large class="home--bottom_navigator">mdi-chevron-down</v-icon>
+     </a>
    </div>
-   <div class="home--second_section">
+   <div class="home--second_section" id="second-section">
      <div class="home--bottom_layout">
        <div class="home--bottom_header">
          <p>Witamy na naszej stronie</p>

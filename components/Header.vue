@@ -21,19 +21,19 @@
         <div class="it-header--mobile">
           <v-icon class="absolute-icon" x-large color="black" @click="showMobileMenu = false">mdi-alpha-x</v-icon>
           <img :src="Logo"/>
-          <nuxt-link exact :to="routes[0].path" class="it-header--link-mobile" @click="showMobileMenu = false">
+          <nuxt-link exact :to="routes[0].path" class="it-header--link-mobile" @click.native="showMobileMenu = false">
             {{ routes[0].name }}
           </nuxt-link>
-          <nuxt-link :to="routes[1].path" class="it-header--link-mobile" @click="showMobileMenu = false">
+          <nuxt-link :to="routes[1].path" class="it-header--link-mobile" @click.native="showMobileMenu = false">
             {{ routes[1].name }}
           </nuxt-link>
-          <nuxt-link :to="routes[2].path" class="it-header--link-mobile" @click="showMobileMenu = false">
+          <nuxt-link :to="routes[2].path" class="it-header--link-mobile" @click.native="showMobileMenu = false">
             {{ routes[2].name }}
           </nuxt-link>
-          <nuxt-link :to="routes[3].path" class="it-header--link-mobile" @click="showMobileMenu = false">
+          <nuxt-link :to="routes[3].path" class="it-header--link-mobile" @click.native="showMobileMenu = false">
             {{ routes[3].name }}
           </nuxt-link>
-          <nuxt-link :to="routes[4].path" class="it-header--link-mobile" @click="showMobileMenu = false">
+          <nuxt-link :to="routes[4].path" class="it-header--link-mobile" @click.native="showMobileMenu = false">
             {{ routes[4].name }}
           </nuxt-link>
         </div>
@@ -85,6 +85,12 @@ export default {
                 },
             ]
         }
+    },
+    methods: {
+      handleClick()
+      {
+        console.log('click');
+      }
     }
 }
 </script>
