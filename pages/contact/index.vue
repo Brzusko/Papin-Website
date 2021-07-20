@@ -22,7 +22,7 @@
                 <v-icon class="icon" color="black">mdi-email</v-icon>
                 <span>Email</span>
               </div>
-              <p class="contact--content__data--info">aksandra79@gmail.com</p>
+              <p class="contact--content__data--info">aleksandra79@gmail.com</p>
             </div>
             <div class="contact--content__data">
               <div class="contact--content__data--header">
