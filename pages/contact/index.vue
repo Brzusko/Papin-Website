@@ -1,7 +1,7 @@
 <template>
   <div class="contact">
-    <div class="contact--image visible-desktop">
-      <img :src="Plant"/>
+    <div class="contact--card visible-desktop">
+      <img :src="Plant" class="contact--card__plant"/>
     </div>
     <div class="contact--content">
       <div class="contact--content__up">
@@ -9,7 +9,7 @@
           <p class="contact--content__header">Kontakt</p>
           <div class="contact--content__text">
             Zapraszamy do kontaktu – oferujemy rzetelną dokumentację, w konkurencyjnych cenach.<br>
-            Obszar naszych działań to zasadniczo rejon Śląska, ale po uzgodnieniu warunków możemy dotrzeć również dalej.
+            Obszar naszych działań to zasadniczo rejen Śląska i Polski południowej, ale po uzgodnieniu warunków możemy również dalej
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
                 <v-icon class="icon" color="black">mdi-email</v-icon>
                 <span>Email</span>
               </div>
-              <p class="contact--content__data--info">aleksandra79@gmail.com</p>
+              <p class="contact--content__data--info">aksandra79@gmail.com</p>
             </div>
             <div class="contact--content__data">
               <div class="contact--content__data--header">
@@ -68,8 +68,5 @@ export default {
   },
   components: {
   },
-  mounted() {
-    console.log(this.$route.name)
-  }
 }
 </script>

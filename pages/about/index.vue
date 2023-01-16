@@ -44,8 +44,7 @@
         dźwięku, detektor ultradźwiękowy, posiadamy specjalistyczne
             oprogramowanie do analizy dźwięku (np. głosów nietoperzy)</b>.</p>
 
-        <p>Pracujemy na umowę zlecenie lub umowę o dzieło, co czyni nas bardziej
-          konkurencyjnymi na rynku.</p>
+        <p>Wystawiam faktury w ramach prowadzonej działalności gospodarczej.</p>
         <img :src="PPapin" class="about--inner-imager about-visible-desktop"/>
       </div>
       <div class="about--image force-padding-top about-visible-desktop">
